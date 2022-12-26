@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <div class="header">
+      <div class="header__logo">
+        <img src="./images/logo.webp" alt="logo" />
+        <h2>Coffee shop</h2>
+      </div>
+      <div class="header__center">
+        <ul>
+          <a href="#">
+            <li>Главная</li>
+          </a>
+          <a href="#">
+            <li>Продукты</li>
+          </a>
+          <a href="#">
+            <li>О нас</li>
+          </a>
+          <a href="#">
+            <li>Наши партнеры</li>
+          </a>
+        </ul>
+      </div>
+      <div class="search-box">
+        <input type="text" class="search-txt" placeholder="Поиск..." />
+        <a href="" class="search-btn">
+          <img
+            src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon.png"
+            alt=""
+            width="20px"
+          />
+        </a>
+      </div>
+
+      <div id="open-admin"></div>
+    </div>
+    <!--?=========== navbar end ==========-->
+    <!-- ! CREATE START -->
+
+    <div class="section__add">
+      <div class="accordion__header">Добавить товар</div>
+      <div id="accordion__body">
+        <input type="text" class="details-input" placeholder="Описание" />
+        <input type="number" class="price-input" placeholder="Цена" />
+        <input type="text" class="quantity-input" placeholder="Количество" />
+        <input type="text" class="category-input" placeholder="Категория" />
+        <input type="number" class="sales-input" placeholder="Скидки" />
+        <input type="url" class="url-input" placeholder="URL изображение" />
+        <button class="btn-add">Add</button>
+      </div>
+    </div>
+
+    <!-- ? CREATE END -->
+
+    <!-- ! FILTER START -->
+    <form>
+      <input type="radio" value="Cappucinno" name="coffee" />
+      <label for="cappucinno">Каппучино</label>
+      <br />
+      <input type="radio" value="Americano" name="coffee" />
+      <label for="americano">Американо</label>
+      <br />
+      <input type="radio" value="Latte" name="coffee" />
+      <label for="latte">Латте</label>
+      <br />
+      <input type="radio" value="all" name="coffee" />
+      <label for="all">Все продукты</label>
+      <br />
+    </form>
+    <!-- ? FILTER END -->
+
+    <!-- ! READ START -->
+    <section id="section__read"></section>
+    <!-- ? READ END -->
+
+    <!-- ! PAGINATION START -->
+    <div class="paginate">
+      <button class="prev-btn">Prev</button>
+      <button class="next-btn">Next</button>
+    </div>
+    <!-- ? PAGINATION END -->
+
+    <!-- ! EDIT START -->
+    <div class="main-modal">
+      <div class="main-modal__window">
+        <button class="window__edit_close">X</button>
+        <input
+          type="text"
+          class="window__edit_details"
+          placeholder="Описание"
+        />
+        <input type="number" class="window__edit_price" placeholder="Цена" />
+        <input
+          type="number"
+          class="window__edit_quantity"
+          placeholder="Количество"
+        />
+        <input
+          type="text"
+          class="window__edit_category"
+          placeholder="Категория"
+        />
+        <input type="number" class="window__edit_sales" placeholder="Скидки" />
+        <input
+          type="url"
+          class="window__edit_url"
+          placeholder="URL изображение"
+        />
+        <button class="window__edit_btn-save">Edit</button>
+      </div>
+    </div>
+    <!-- ? EDIT END -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
